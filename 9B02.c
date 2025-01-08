@@ -1,0 +1,60 @@
+#include<stdio.h>
+void main()
+{
+    int n;
+    printf("Enter value of number to convet it into roman :      ");
+    scanf("%d",&n);
+    while(n>0){
+        if(n>=1000){
+        n=n-1000;
+        printf("M");}
+        if(n>=900){
+            n=n-900;
+            printf("CM");
+        }
+        if(n>=500){
+            n=n-500;
+            printf("D");
+        }
+        if(n>=400){
+            n=n-400;
+            printf("CD");
+        }
+         if(n>=100){
+            n=n-100;
+            printf("C");
+        }
+         if(n>=90){
+            n=n-90;
+            printf("XC");
+        }
+        if(n>=50){
+            n=n-50;
+            printf("L");
+        }
+         if(n>=40){
+            n=n-40;
+            printf("XL");
+        }
+         if(n>=10){
+            n=n-10;
+            printf("X");
+        }
+         if(n>=9){
+            n=n-9;
+            printf("IX");
+        }
+         if(n>=5){
+            n=n-5;
+            printf("V");
+        }
+         if(n>=4){
+            n=n-4;
+            printf("IV");
+        }
+         if(n>=1){
+            n=n-1;
+            printf("I");
+        }
+    }
+}
